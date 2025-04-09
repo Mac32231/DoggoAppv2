@@ -274,12 +274,12 @@ fun AppBar(
         shadowElevation = 4.dp,
         modifier = Modifier
             .fillMaxWidth()
-            .height(64.dp) // zmniejszona wysokość paska
+            .height(64.dp)
     ) {
         Row(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(horizontal = 12.dp), // mniej paddingu pionowego
+                .padding(horizontal = 12.dp), 
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
@@ -376,9 +376,9 @@ fun DogImageBoxBig(imageUrl: String?, isLoading: Boolean, isError: Boolean) {
 fun DogDetailTopBar(navController: NavController, dog: Dog, onDelete: () -> Unit) {
     Surface(color = Color(0xFEF7FF), shadowElevation = 4.dp) {
         Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 8.dp, vertical = 12.dp),
+             modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
